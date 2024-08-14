@@ -1,0 +1,77 @@
+.teacherCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  
+  .teacherCard {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 calc(33.33% - 1rem); /* Adjust width and margin as per your preference */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    cursor: pointer;
+  }
+  
+  .teacherCard img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .teacherCard:hover {
+    transform: scale(0.8); /* Scale down the card slightly on hover */
+  }
+  
+  .teacherCardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 92, 165, 0.3);
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .teacherCardName {
+    padding: 0.5rem;
+  }
+  
+  .teacherCardName p {
+    font-family: "Trirong", serif;
+    text-shadow: 3px 3px 3px #ababab;
+  }
+  
+  .teacherCard img {
+    width: 100px; /* Adjust according to your preference */
+    height: 100px; /* Adjust according to your preference */
+    border-radius: 50%; /* To make the image circular */
+    object-fit: cover; /* Ensure the image fills the circle */
+    margin-bottom: 8px;
+  }
+  
+  .teacherCard h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.dataTableContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

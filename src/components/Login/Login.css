@@ -1,0 +1,50 @@
+.loginContainer {
+    display: flex;
+    height: 100vb;
+    width: 100%;
+    padding: 1rem;
+}
+
+.loginGlass {
+    display: flex;
+    flex-direction: column;
+    background-color: #141419;;
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm span {
+    margin-bottom: 1rem;
+
+}
+
+.loginForm input {
+    margin-bottom: 1rem;
+}
+
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .slowLoading {
+    animation: zoomInOut 2s infinite;
+    margin-top: 1rem;
+  }

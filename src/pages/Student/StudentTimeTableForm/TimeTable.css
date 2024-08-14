@@ -1,0 +1,80 @@
+.setMainFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gradeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.gradeFormInput {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.addUpdateSubject {
+  display: flex;
+  margin-top: 1rem;
+  
+}
+
+.tableMainChartContainer {
+  background-color: #f9f9f9;
+  color: black;
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}  
+
+/* Table */
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Header */
+.timetable  th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table Body */
+.timetable td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Adjust padding */
+  text-align: left;
+  height: 80px; /* Adjust height */
+}
+
+/* Alternating Row Color */
+.timetable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+.timetable td:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.tableScroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Optional: Adjust scroll appearance */
+.tableScroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tableScroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+}

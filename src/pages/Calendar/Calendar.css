@@ -1,0 +1,184 @@
+.calendarMainContainer {
+    width: 100%;
+    color: black;
+    position: relative;
+    z-index: 1; /* Ensure calendar is above modal */
+}
+
+.calendar-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+/* Change calendar day number color to blue */
+.fc-daygrid-day-number {
+  color: blue !important; /* Override existing color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Optionally, you can remove the underline on hover */
+.fc-daygrid-day-number:hover {
+  text-decoration: none;
+}
+  
+.fc {
+    background-color: #f5f5f5;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+  
+  /* Styles for the calendar header */
+.fc-header-toolbar {
+    margin-bottom: 20px;
+}
+  
+  /* Styles for the calendar button */
+.fc-button {
+    background-color: #3788d8;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 15px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+  
+.fc-button:hover {
+    background-color: #3067a3;
+}
+  
+  /* Styles for the calendar events */
+.fc-event {
+    background-color: #3788d8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.fc-event-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.fc-event:hover {
+    background-color: #3067a3;
+}
+
+/* Models */
+
+.add-event-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-event-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-event-modal h2 {
+  margin-bottom: 20px;
+}
+
+.add-event-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-event-modal .form-group {
+  margin-bottom: 15px;
+}
+
+.add-event-modal label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-event-modal input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.add-event-modal .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.add-event-modal button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.add-event-modal button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Adjust modal positioning and z-index */
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Set a high z-index */
+}
+
+
+.event-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-details-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  color: black;
+}
+
+.modalDelete {
+  display: flex;
+  justify-content: end;
+}
+
+.modalDelete button {
+  background-color: red;
+}
+
+
+
+  

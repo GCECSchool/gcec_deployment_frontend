@@ -1,0 +1,223 @@
+.financeMainConatainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.financeYearSelect {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  height: 100px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.financeTableContainer {
+  width: 100%;
+  color: black;
+  margin-top: 2rem;
+  background-color: aliceblue;
+}
+
+/* Table */
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Header */
+.timetable th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table Body */
+.timetable td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Adjust padding */
+  text-align: left;
+  height: 80px; /* Adjust height */
+}
+
+/* Alternating Row Color */
+.timetable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+.timetable td:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.tableScroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Optional: Adjust scroll appearance */
+.tableScroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tableScroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.printSlipImage {
+  width: 100px; /* Set the width of the image */
+  height: 100px; /* Set the height of the image */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the specified dimensions without stretching */
+}
+
+.imgBorderWidth {
+  display: flex;
+  background-color: black;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+}
+
+.printTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.printAddress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.reciptText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dateContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.printImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.printContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.printWidth {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(
+    240,
+    248,
+    255,
+    0.8
+  ); /* semi-transparent background color for light opacity */
+  color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 300px;
+  position: relative; /* for overlay usage */
+  overflow: hidden; /* to prevent the pseudo-element from overflowing */
+  z-index: 1; /* Ensure the main container is above the pseudo-element */
+}
+
+.logoContainer {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logoContainer img {
+  width: 100px;
+  height: 100px;
+}
+
+.printWidth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 150px 150px;
+  background-position: center calc(100% - 40px);
+  background-repeat: no-repeat;
+  opacity: 1; /* adjust opacity to make the image fade out */
+  pointer-events: none; /* allow interactions with the content below */
+  z-index: -1; /* place the pseudo-element behind the content */
+}
+
+.printBtn {
+  display: flex;
+  width: 100%;
+}
+
+.printPageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modalContainer {
+  width: 50%; /* Initial width for larger screens */
+}
+
+.InfoPrint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dataRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: -0.2rem 0; /* Adjust the top and bottom margin to make the spacing narrower */
+}
+
+.PaidTotal {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 414px) {
+  .modalContainer {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+.printBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
